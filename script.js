@@ -1,3 +1,8 @@
+let toastBox = document.getElementById("toastBox");
+
 function showToast() {
-	document.createElement("div");
+	let toast = document.createElement("div");
+	toast.classList.add("toast");
+	toast.innerHTML = "success";
+	toastBox.appendChild(toast);
 }
